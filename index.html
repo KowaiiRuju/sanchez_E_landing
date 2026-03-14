@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MSU-MCEST - Quality Education</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styling.css">
+</head>
+<body>
+
+    <!-- Top Navbar -->
+    <header class="navbar">
+        <div class="container nav-container">
+            <div class="nav-logo">
+                <img src="logo/LogoMCEST.png" alt="MSU-MCEST Logo" class="header-logo">
+                <span class="logo-text">MSU-MCEST</span>
+            </div>
+            <nav class="nav-links">
+                <a href="#vision">Vision & Mission</a>
+                <a href="#success">Our Success</a>
+                <a href="#values">Core Values</a>
+                <a href="#academics">Academics</a>
+            </nav>
+            <div class="nav-actions">
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="hero-bg">
+                <!-- Fallback to a solid deep blue if the image path needs adjusting, but we use the provided image -->
+                <img src="main_image.jpg" alt="MSU-MCEST Campus">
+                <div class="hero-overlay"></div>
+            </div>
+            
+            <div class="container hero-content-wrapper">
+                <div class="hero-text-content">
+                    <p class="mantra-badge"><i class="fa-solid fa-star"></i> Campus Mantra: Quality Education, Academic Excellence, Exemplary Service</p>
+                    <h1 class="hero-title">Your First Choice for Quality Education</h1>
+                    <p class="hero-subtitle">MSU-MCEST is a premier public institution located in Maigo, Lanao del Norte, Philippines. It specializes in industrial innovation and technical education, offering a range of programs designed to equip students with cutting-edge knowledge and practical skills. As a COPC-certified institution, it has been recognized for its commitment to quality education and operational excellence.</p>
+                    
+                    <div class="hero-buttons">
+                        <a href="#academics" class="btn btn-primary btn-large">Explore Programs</a>
+                        <a href="http://msumcest.edu.ph/" class="btn btn-glass btn-large">Apply Now</a>
+                    </div>
+                </div>
+
+                <!-- Overlapping Vision & Mission Card -->
+                <div class="hero-overlap-card" id="vision">
+                    <div class="vmg-tabs">
+                        <button class="tab-btn active" onclick="openTab(event, 'vision-tab')">Vision</button>
+                        <button class="tab-btn" onclick="openTab(event, 'mission-tab')">Mission</button>
+                    </div>
+                    
+                    <div id="vision-tab" class="tab-content active">
+                        <h3>A globally recognized institution.</h3>
+                        <p>In education, science, and technology, committed to advancing instruction, research, innovations, peace and development.</p>
+                    </div>
+                    
+                    <div id="mission-tab" class="tab-content">
+                        <h3>Transformative Education.</h3>
+                        <p>MSU-MCEST shall provide a transformative education fostering excellence through instruction, research, extension, innovation, and peace and development.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Success / Stats Section -->
+        <section class="stats-section" id="success">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2>Our Success <span class="emoji">🏆</span> Stories</h2>
+                    <p>Building futures through excellence in instruction and community service.</p>
+                </div>
+                
+                <div class="stats-grid">
+                    <div class="stat-card light-orange">
+                        <div class="stat-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                        <h3 class="counter" data-target="20">0</h3>
+                        <p>Available Programs</p>
+                    </div>
+                    <div class="stat-card deep-blue">
+                        <div class="stat-icon"><i class="fa-solid fa-users-gear"></i></div>
+                        <h3 class="counter" data-target="64">0</h3>
+                        <p>Empowered Personnel</p>
+                    </div>
+                    <div class="stat-card light-blue">
+                        <div class="stat-icon"><i class="fa-solid fa-chalkboard-user"></i></div>
+                        <h3 class="counter" data-target="81">0</h3>
+                        <p>Skilled Faculty</p>
+                    </div>
+                    <div class="stat-card teal">
+                        <div class="stat-icon"><i class="fa-solid fa-face-smile"></i></div>
+                        <h3 class="counter" data-target="2009">0</h3>
+                        <p>Happy Students</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Core Values Section -->
+        <section class="values-section" id="values">
+            <div class="container">
+                <div class="values-wrapper">
+                    <div class="values-intro">
+                        <h2>Our Core Values</h2>
+                        <h1 class="rise-acronym">R.I.S.E</h1>
+                        <p>The foundation of our institution, guiding our actions, decisions, and commitment to student success.</p>
+                    </div>
+                    
+                    <div class="values-grid">
+                        <div class="value-item">
+                            <div class="value-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                            <h4>Resilience</h4>
+                            <p>Embracing challenges and continuous learning.</p>
+                        </div>
+                        <div class="value-item">
+                            <div class="value-icon"><i class="fa-solid fa-scale-balanced"></i></div>
+                            <h4>Integrity</h4>
+                            <p>Ethical and honest actions in all domains.</p>
+                        </div>
+                        <div class="value-item">
+                            <div class="value-icon"><i class="fa-solid fa-hands-holding-child"></i></div>
+                            <h4>Service</h4>
+                            <p>Community-driven, socially responsible education.</p>
+                        </div>
+                        <div class="value-item">
+                            <div class="value-icon"><i class="fa-solid fa-crown"></i></div>
+                            <h4>Excellence</h4>
+                            <p>Pursuit of the highest standards in academics and research.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Goals & Objectives Block -->
+        <section class="goals-objectives-section">
+            <div class="container">
+                <div class="go-grid">
+                    <!-- Goals (Cards Flow) -->
+                    
+
+                    <!-- Objectives (List) -->
+                    <div class="objectives-column">
+                        <div class="objectives-box">
+                            <h2>Key Objectives</h2>
+                            <ul class="custom-list">
+                                <li>Provide Quality Education aligned with global needs.</li>
+                                <li>Support Student Success through a thriving learning environment.</li>
+                                <li>Promote Research and Innovation with community impact.</li>
+                                <li>Build strong Community Partnerships.</li>
+                                <li>Foster Diversity and Inclusivity in all endeavors.</li>
+                                <li>Support Faculty Development continually.</li>
+                                <li>Advance Global Citizenship and partnerships.</li>
+                                <li>Enhance Digital Learning and Innovation.</li>
+                                <li>Link with Industry and Government for real-world application.</li>
+                                <li>Uphold Environmental Sustainability practices.</li>
+                                <li>Improve Facilities and academic resources.</li>
+                                <li>Promote Student Wellness holistically.</li>
+                                <li>Expand Global Opportunities through internationalization.</li>
+                                <li>Provide Scholarships for equitable education access.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Departments / Academics Section -->
+        <section class="departments-section" id="academics">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2>Academic Departments</h2>
+                    <p>Discover our comprehensive range of specialized programs designed for modern challenges.</p>
+                </div>
+                
+                <div class="departments-grid">
+                    <div class="dept-card">
+                        <img src="logo/dept-logo-dhess.png" alt="DHESS Logo" style="object-fit: contain; padding: 20px; background: #fff;">
+                        <div class="dept-info">
+                            <h4>B.S. Elementary Education <br>& Bachelor of Technology</h4>
+                            <a href="http://msumcest.edu.ph/pages/academics/acad_dept_dhess.php" class="dept-link" target="_blank">Explore DHESS <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="dept-card">
+                        <img src="logo/dept-logo-dcs.png" alt="DCS Logo" style="object-fit: contain; padding: 20px; background: #fff;">
+                        <div class="dept-info">
+                            <h4>Bachelor of Science in Computer Science</h4>
+                            <a href="http://msumcest.edu.ph/pages/academics/acad_dept_dcs.php" class="dept-link" target="_blank">Explore DCS <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="dept-card">
+                        <img src="logo/dept-logo-dhm.png" alt="DHM Logo" style="object-fit: contain; padding: 20px; background: #fff;">
+                        <div class="dept-info">
+                            <h4>Bachelor of Science in Hospitality Management</h4>
+                            <a href="http://msumcest.edu.ph/pages/academics/acad_dept_dhm.php" class="dept-link" target="_blank">Explore DHM <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="dept-card">
+                        <img src="logo/dept-logo-dit.png" alt="DIT Logo" style="object-fit: contain; padding: 20px; background: #fff;">
+                        <div class="dept-info">
+                            <h4>Bachelor of Industrial Technology</h4>
+                            <a href="http://msumcest.edu.ph/pages/academics/acad_dept_dit.php" class="dept-link" target="_blank">Explore DIT <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="dept-card">
+                        <img src="logo/dept-logo-det.png" alt="DET Logo" style="object-fit: contain; padding: 20px; background: #fff;">
+                        <div class="dept-info">
+                            <h4>Bachelor of Science in Engineering Technology</h4>
+                            <a href="http://msumcest.edu.ph/pages/academics/acad_dept_det.php" class="dept-link" target="_blank">Explore DET <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="dept-card">
+                        <img src="logo/dept-logo-dnsm.png" alt="DNSM Logo" style="object-fit: contain; padding: 20px; background: #fff;">
+                        <div class="dept-info">
+                            <h4>B.S. Mathematics & <br>B.S. Biology</h4>
+                            <a href="http://msumcest.edu.ph/pages/academics/acad_dept_dnsm.php" class="dept-link" target="_blank">Explore DNSM <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="dept-card">
+                        <img src="logo/dept-logo-dcje.png" alt="DCJE Logo" style="object-fit: contain; padding: 20px; background: #fff;">
+                        <div class="dept-info">
+                            <h4>Bachelor of Science in Criminology</h4>
+                            <a href="http://msumcest.edu.ph/pages/academics/acad_dept_dcje.php" class="dept-link" target="_blank">Explore DCJE <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="dept-card">
+                        <img src="logo/dept-logo-dsw.png" alt="DSW Logo" style="object-fit: contain; padding: 20px; background: #fff;">
+                        <div class="dept-info">
+                            <h4>Bachelor of Science in Social Work</h4>
+                            <a href="http://msumcest.edu.ph/pages/academics/acad_dept_dsw.php" class="dept-link" target="_blank">Explore DSW <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Detailed Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col brand-col">
+                    <h2 class="footer-logo">MSU-MCEST</h2>
+                    <p>A globally recognized institution in education, science, and technology, committed to advancing instruction, research, innovations, peace and development.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#vision">About Us</a></li>
+                        <li><a href="#academics">Admissions</a></li>
+                        <li><a href="#">Scholarships</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Academics</h4>
+                    <ul>
+                        <li><a href="#">Undergraduate</a></li>
+                        <li><a href="#">Graduate Programs</a></li>
+                        <li><a href="#">Research</a></li>
+                        <li><a href="#">Library</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col contact-col">
+                    <h4>Contact Us</h4>
+                    <p>Ready to start your journey?</p>
+                    <a href="#" class="btn btn-primary w-100 text-center">Inquire Now</a>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 MSU-MCEST. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
