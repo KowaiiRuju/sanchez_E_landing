@@ -22,7 +22,6 @@
                 <span class="logo-text">MSU-MCEST</span>
             </div>
             <nav class="nav-links">
-                <a href="#vision">Vision & Mission</a>
                 <a href="#success">Our Success</a>
                 <a href="#values">Core Values</a>
                 <a href="#academics">Academics</a>
@@ -250,7 +249,7 @@
             <div style="text-align: center; max-width: 600px; margin: 0 auto;">
                 <h2 class="footer-logo">MSU-MCEST</h2>
                 <p style="color: #94A3B8; margin-bottom: 2rem;">A globally recognized institution in education, science, and technology, committed to advancing instruction, research, innovations, peace and development.</p>
-                <a href="#" class="btn btn-primary" onclick="window.scrollTo({top:0,behavior:'smooth'}); return false;">Go to Top</a>
+                <a href="#" class="btn btn-primary" onclick="window.scrollTo({top:0,behavior:'smooth'}); return false;">Back to Top</a>
             </div>
             
             <div class="footer-bottom" style="justify-content: center; margin-top: 3rem;">
@@ -259,6 +258,38 @@
         </div>
     </footer>
 
+    <!-- Back to Top Button -->
+    <button id="backToTopBtn" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Back to Top"
+        style="
+            display: none;
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            z-index: 9999;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: #ED8936;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            font-size: 1.2rem;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            transition: all 0.3s ease;
+        ">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
     <script src="script.js"></script>
+    <script>
+        const backBtn = document.getElementById('backToTopBtn');
+        window.addEventListener('scroll', () => {
+            backBtn.style.display = window.scrollY > 300 ? 'flex' : 'none';
+            backBtn.style.alignItems = 'center';
+            backBtn.style.justifyContent = 'center';
+        });
+        backBtn.addEventListener('mouseenter', () => backBtn.style.transform = 'translateY(-4px)');
+        backBtn.addEventListener('mouseleave', () => backBtn.style.transform = 'translateY(0)');
+    </script>
 </body>
 </html>
