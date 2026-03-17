@@ -55,4 +55,59 @@ document.addEventListener('DOMContentLoaded', () => {
     counters.forEach(counter => {
         countObserver.observe(counter);
     });
+    // --- Scroll Reveal Animation ---
+    const revealEls = document.querySelectorAll('.reveal, .reveal-left, .reveal-right');
+
+    const revealObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                revealObserver.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.15 });
+
+    revealEls.forEach(el => revealObserver.observe(el));
+
+    // --- Stagger children scroll reveal ---
+    const staggerContainers = document.querySelectorAll('.stagger');
+
+    const staggerObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.querySelectorAll(':scope > *').forEach(child => {
+                    child.classList.add('reveal');
+                    // Tiny rAF trick: allow layout before adding visible
+                    requestAnimationFrame(() => {
+                        requestAnimationFrame(() => child.classList.add('visible'));
+                    });
+                });
+                staggerObserver.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.1 });
+
+    staggerContainers.forEach(el => staggerObserver.observe(el));
+
+    // --- Stat card pop-in with stagger delays ---
+    const statCards = document.querySelectorAll('.stat-card');
+    const statObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const siblings = [...statCards];
+                const idx = siblings.indexOf(entry.target);
+                entry.target.style.animationDelay = `${idx * 0.12}s`;
+                entry.target.classList.add('pop-in');
+                statObserver.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.2 });
+
+    statCards.forEach(card => statObserver.observe(card));
+
+    // --- Navbar scroll shadow ---
+    const navbar = document.querySelector('.navbar');
+    window.addEventListener('scroll', () => {
+        navbar.classList.toggle('scrolled', window.scrollY > 20);
+    });
 });
